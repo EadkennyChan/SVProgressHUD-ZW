@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SVProgressHUD-ZW'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = '从简化版做起经常用到的一些公共代码.'
 
 # This description is used to generate tags and improve search results.
@@ -30,15 +30,13 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
     s.ios.deployment_target = '6.0'
-    s.source_files = 'ZWUtilityKit/{*,**/*}.{h,m}'
+    s.source_files = '*.{h,m}'
+s.resources    = 'SVProgressHUD.bundle'
 
   s.frameworks = 'SystemConfiguration','Security','CoreLocation','QuartzCore','CFNetwork','MessageUI'
-  
-  # s.resource_bundles = {
-  #   'ZWUtilityKit' => ['ZWUtilityKit/Assets/*.png']
-  # }
+
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-    s.dependency 'Reachability', '~> 3.2'
+    s.dependency 'ZWUtilityKit-sc'
 end
