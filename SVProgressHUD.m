@@ -13,7 +13,6 @@
 
 #import "SVProgressHUD.h"
 #import <QuartzCore/QuartzCore.h>
-#import "UtilityUIKit.h"
 
 NSString * const SVProgressHUDDidReceiveTouchEventNotification = @"SVProgressHUDDidReceiveTouchEventNotification";
 NSString * const SVProgressHUDWillDisappearNotification = @"SVProgressHUDWillDisappearNotification";
