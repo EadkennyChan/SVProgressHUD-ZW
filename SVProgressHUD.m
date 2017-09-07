@@ -378,7 +378,7 @@ static SVProgressHUD *g_sharedHUDView;
         keyboardHeight = self.visibleKeyboardHeight;
     }
     
-    CGRect orientationFrame = [UIScreen mainScreen].bounds;
+    CGRect orientationFrame = self.bounds;
     CGRect statusBarFrame = [UIApplication sharedApplication].statusBarFrame;
     
     if(UIInterfaceOrientationIsLandscape(orientation)) {
@@ -709,7 +709,7 @@ static SVProgressHUD *g_sharedHUDView;
 
 - (UIView *)hudView {
     if(!hudView) {
-        hudView = [[UIView alloc] initWithFrame:CGRectZero];
+        hudView = [[UIView alloc] initWithFrame:self.bounds];
         hudView.layer.cornerRadius = 10;
         hudView.layer.masksToBounds = YES;
         
